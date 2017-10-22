@@ -78,7 +78,7 @@ MainActivity extends AppCompatActivity implements CartAdapter.RefreshPriceInterf
             map.put("name", listBean.getTitle());
             map.put("type", (i + 20) + "码");
             map.put("price", listBean.getPrice() + "");
-            map.put("count", 1 + "");
+            map.put("count", listBean.getNum()+"");
             map.put("image", listBean.getImages());
             goodsList.add(map);
 

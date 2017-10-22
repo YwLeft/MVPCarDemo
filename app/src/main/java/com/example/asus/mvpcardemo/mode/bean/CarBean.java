@@ -2,11 +2,7 @@ package com.example.asus.mvpcardemo.mode.bean;
 
 import java.util.List;
 
-/**
- * 创建时间  2017/10/17 19:33
- * 创建人    gaozhijie
- * 类描述
- */
+
 public class CarBean {
 
     /**

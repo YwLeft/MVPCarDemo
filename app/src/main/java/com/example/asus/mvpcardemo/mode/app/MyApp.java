@@ -3,18 +3,11 @@ package com.example.asus.mvpcardemo.mode.app;
 import android.app.Application;
 import android.content.Context;
 
-import org.xutils.BuildConfig;
-import org.xutils.x;
-
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
 
-/**
- * 创建时间  2017/10/20 20:00
- * 创建人    gaozhijie
- * 类描述
- */
+
 public class MyApp extends Application{
     private static Context context;
     private static OkHttpClient okHttpClient;
@@ -24,8 +17,6 @@ public class MyApp extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-        x.Ext.init(this);
-        x.Ext.setDebug(BuildConfig.DEBUG);
 
         okHttpClient = new OkHttpClient().newBuilder()
                 .connectTimeout(5, TimeUnit.SECONDS)
