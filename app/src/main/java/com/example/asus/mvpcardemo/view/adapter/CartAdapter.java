@@ -51,7 +51,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         else holder.checkBox.setChecked(true);
         HashMap<String,String> map=dataList.get(position);
         String[] images = map.get("image").split("\\|");
-        Glide.with(context).load(images[0]).load(holder.icon);
+        Glide.with(context).load(images[0]).into(holder.icon);
         holder.name.setText(map.get("name").substring(0,20));
         holder.num.setText(map.get("count"));
         holder.type.setText(map.get("type"));
